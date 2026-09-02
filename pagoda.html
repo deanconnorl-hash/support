@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagoda — Support</title>
+<style>
+  :root {
+    --ink: #0e0d0c; --bone: #EDE6D6; --bone-dim: #CBC4B4;
+    --ember: #C4442F; --gold: #D9A441; --jade: #4E9E7E;
+    --hairline: rgba(255,255,255,.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: radial-gradient(ellipse 90% 60% at 50% 20%, #141512 0%, var(--ink) 70%);
+    color: var(--bone); font: 17px/1.65 Georgia, 'Times New Roman', serif;
+    min-height: 100vh; padding: 48px 24px;
+  }
+  main { max-width: 560px; margin: 0 auto; }
+  .tiles { font-size: 28px; letter-spacing: 6px; margin-bottom: 18px; }
+  .tiles .r { color: var(--ember); } .tiles .g { color: var(--jade); }
+  .tiles .b { color: var(--bone-dim); }
+  h1 { font-size: 40px; letter-spacing: 8px; font-weight: 600; }
+  .tag { color: var(--ember); font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+         font-family: -apple-system, Helvetica, sans-serif; margin: 8px 0 40px; }
+  h2 { font-size: 13px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ember);
+       font-family: -apple-system, Helvetica, sans-serif; margin: 36px 0 10px; }
+  p { color: var(--bone-dim); margin-bottom: 12px; }
+  a { color: var(--gold); }
+  .card { border: 1px solid var(--hairline); border-radius: 12px; padding: 20px 22px; margin: 8px 0; }
+  .q { color: var(--bone); font-weight: 600; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--hairline);
+           font-size: 13px; color: rgba(203,196,180,.5);
+           font-family: -apple-system, Helvetica, sans-serif; }
+</style>
+</head>
+<body>
+<main>
+  <div class="tiles"><span class="b">&#26481;</span><span class="r">&#20013;</span><span class="g">&#30332;</span><span class="b">&#19975;</span></div>
+  <h1>PAGODA</h1>
+  <div class="tag">A Mahjong Roguelite &mdash; Support</div>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Questions, bugs, or an argument about the target on board&nbsp;9 &mdash; write any time:</p>
+    <p><a href="mailto:deanconnorl@icloud.com">deanconnorl@icloud.com</a></p>
+    <p>You will hear back within a few days.</p>
+  </div>
+
+  <h2>Common Questions</h2>
+  <div class="card">
+    <p class="q">Where did my run go?</p>
+    <p>Runs autosave after every move, on your device. If a run is missing, make sure the app wasn&rsquo;t deleted and reinstalled &mdash; saves live only on the device itself.</p>
+  </div>
+  <div class="card">
+    <p class="q">The board has no pairs left. Is the run dead?</p>
+    <p>No &mdash; that is what reshuffles are for. A reshuffle re-deals the remaining tiles into an arrangement that can still be cleared, and every board is generated solvable to begin with. You only lose a run when the score target goes unmet.</p>
+  </div>
+  <div class="card">
+    <p class="q">Why won&rsquo;t two matching tiles match?</p>
+    <p>A tile can only be taken when it is free: nothing stacked on top of it, and at least one of its left or right sides open. Flowers match any flower and seasons match any season; everything else matches only its exact twin.</p>
+  </div>
+  <div class="card">
+    <p class="q">Are there in-app purchases or ads?</p>
+    <p>No, and there never will be. You paid once; everything in the game is earned by playing.</p>
+  </div>
+  <div class="card">
+    <p class="q">Does the game need the internet?</p>
+    <p>No. Pagoda is fully offline. It makes no network connections at all.</p>
+  </div>
+  <div class="card">
+    <p class="q">How do paths and difficulties unlock?</p>
+    <p>By the furthest board you have ever reached, and by winning runs. The run setup screen shows each condition.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Pagoda collects no data of any kind. The full policy is one paragraph: <a href="pagoda-privacy.html">read it here</a>.</p>
+
+  <footer>&copy; 2026 Connor Lee Dean &middot; Pagoda for iPhone &amp; iPad &middot; <a href="index.html">Patience support</a></footer>
+</main>
+</body>
+</html>
