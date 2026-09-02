@@ -8,5 +8,10 @@ each app, and App Review checks that they load, so nothing here should 404.
 | Patience | `index.html` | `privacy.html` |
 | Pagoda | `pagoda.html` | `pagoda-privacy.html` |
 | Canary | `canary.html` | `canary-privacy.html` |
+| Orrery | `orrery.html` | `orrery-privacy.html` |
+| Tempo | `tempo.html` | `tempo-privacy.html` |
+
+Every page's footer links to every other game. That cross-promotion is the
+main advantage of shipping a series and it costs nothing.
 
 Plain HTML, no build step. Edit a file, commit, push; Pages redeploys itself.
