@@ -1,0 +1,125 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tine — Support</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0b0d0e; color:#efeadb;
+         font:16px/1.65 ui-serif, Georgia, serif; }
+  main { max-width:38rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:2rem; font-weight:400; letter-spacing:.22em; margin:0 0 .2rem; }
+  .sub { color:#cfa63c; font-size:.72rem; letter-spacing:.2em;
+         text-transform:uppercase; margin:0 0 2.5rem; }
+  h2 { font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+       color:#cfa63c; margin:2.5rem 0 .75rem; }
+  .card { background:#14171a; border:1px solid #23282c; border-radius:6px;
+          padding:1rem 1.15rem; margin:0 0 .8rem; }
+  .q { font-weight:600; margin:0 0 .4rem; }
+  p { margin:0 0 .6rem; color:#c9c4b6; }
+  a { color:#cfa63c; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid #23282c;
+           font-size:.75rem; color:#7d786d; }
+</style>
+<main>
+  <h1>TINE</h1>
+  <p class="sub">Tuner and metronome — support</p>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Questions, bugs, or a tuning you would like added — write any time:</p>
+    <p><a href="mailto:deanconnorl@icloud.com">deanconnorl@icloud.com</a></p>
+    <p>You will hear back within a few days.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <div class="card">
+    <p class="q">The tuner is not reading anything.</p>
+    <p>Check that Tine has microphone permission: Settings › Tine › Microphone.
+      If permission is on and it still reads nothing, something else may be
+      holding the microphone — a call, a voice memo, or a recording app in the
+      background. Closing that frees it.</p>
+    <p>Very quiet notes are also ignored on purpose. A tuner that flickers
+      between random notes when nobody is playing looks broken even when it is
+      working, so anything near room level is treated as silence.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Why does it show a dash instead of a note sometimes?</p>
+    <p>Because it is not sure, and saying so is more useful than guessing. A
+      dash means the sound was not periodic enough to have a single pitch —
+      a chord, a muted string, a cough. A tuner that shows a confident wrong
+      note is worse than one that shows nothing, because you act on it.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">How accurate is it?</p>
+    <p>Across 222 test tones from B0 to C7 — pure sines, harmonically rich
+      sawtooths, and plucked strings with a deliberately weakened fundamental —
+      the worst error is 0.27 cents. It calls a note in tune within ±5 cents,
+      so the measurement is about nineteen times finer than the verdict.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">My bass reads an octave high on other tuners. Does this one?</p>
+    <p>No. That failure comes from picking the loudest frequency, and on a low
+      string the second harmonic is often louder than the fundamental. Tine
+      measures periodicity instead, which is not fooled by a weak fundamental.
+      The low B on a five-string is within the range it reads.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">What does A₄ = 440 mean, and should I change it?</p>
+    <p>It is the reference the whole scale is built from. Concert pitch is
+      440 Hz and that is the default. Orchestras often tune to 442 or 443, and
+      baroque ensembles to 415 — about a semitone lower. If you do not know
+      that you need to change it, you do not need to change it.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Does the metronome drift?</p>
+    <p>No. Each click's position is computed from its number rather than by
+      adding an interval to the click before it, so error cannot accumulate.
+      After an hour it is within half a sample — about 11 microseconds — and
+      after four hours it is still within half a sample.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Can I tune by ear instead of watching the needle?</p>
+    <p>Yes, and it is worth learning. Tap any string in the row to hear its
+      target pitch. Readings pause while the tone sounds, because otherwise the
+      microphone would hear the speaker and report a perfect note that nobody
+      played.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Why does the screen stay awake during the metronome?</p>
+    <p>Because you are holding an instrument and not the phone. It goes back to
+      normal when you stop.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Are there ads or in-app purchases?</p>
+    <p>No, and there never will be. You paid once.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Does it need the internet?</p>
+    <p>No. Tine makes no network connections of any kind.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <div class="card">
+    <p>Tine collects no data of any kind, and the microphone audio never leaves
+      the device. The full policy is short:
+      <a href="tine-privacy.html">read it here</a>.</p>
+  </div>
+
+  <footer>&copy; 2026 Connor Lee Dean &middot; Tine for iPhone &amp; iPad &middot;
+    <a href="index.html">Patience</a> &middot;
+    <a href="pagoda.html">Pagoda</a> &middot;
+    <a href="canary.html">Canary</a> &middot;
+    <a href="orrery.html">Orrery</a> &middot;
+    <a href="tempo.html">Tempo</a>
+  </footer>
+</main>
